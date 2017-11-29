@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <title>NAV and FOOTER ONLY</title>
+  
+  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
+</head>
+
+<body>
+  <!-- Overall idea: I wrapped nav and logo together by adding class "fixed-nav" -->
+  <article class="fixed-nav">
+    <a href="#"><img src="images/logo.jpg" alt="logo"></a>
+    
+    <!-- Idea 1: Nav without About in Main Nav -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Private Lessons</a></li>
+      </ul>
+    </nav>
+
+    <!-- Idea 2: Nav with About in Main Nav -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Private Lessons</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Added a search bar to the fixed-nav -->
+    <section class="search">
+      <input type="text" class="search-input" placeholder="Need help?">
+      <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+    </section>
+  </article>
+  
+  <!-- Global Footer. Has Contact section, social media, nav -->
+  <footer>
+    
+    <!-- One "contact" section with e-mail form link -->
+    <section class="contact">
+      <h6>Contact Us</h6>
+      
+      <p>Address: 528 Nock Point Ln Tacoma, WA 98412</p>
+      <p>(253)555-1010</p>
+      <a href="#">Email Us</a>
+    </section>
+    
+    <!-- One "contact" section without e-mail form link -->
+    <section class="contact">
+      <h6>Contact Us</h6>
+      
+      <p>Address: 528 Nock Point Ln Tacoma, WA 98412</p>
+      <p>Phone:(253)555-1010</p>
+      <p>Email: archery-education@example.com</p>
+    </section>
+    
+    <!-- section with social media icons/links -->
+    <section class="social-media">
+      <h6>Connect With Us</h6>
+      
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+    </section>
+    
+    <!-- footer nav -->
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Private Lessons</a></li>
+      </ul>
+    </nav>
+    
+    <p>Copyright&copy; 2017 Straight to the Point Archery</p>
+  </footer>
+</body>
+</html>
