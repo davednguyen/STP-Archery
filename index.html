@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Straight to the Point</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">  
+  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
+  <!--<script src="https://use.fontawesome.com/ac62c0e0c8.js"></script>-->
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="Logo" width="100">
+    <a href="index.html"><img src="images/logo.jpg" alt="logo" width="75"></a>
     <h1>Straight to the Point Archery</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes.html">Classes</a>
-      <a href="privatelessons.html">Lessons</a>
-      <a href="instructors.html">Instructors</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="privatelessons.html">Private Lessons</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+      </ul>
     </nav>
   </header>
-
-  <article>
-    <h2>Background</h2>
+  <article class="fixed-nav">
+    <h2>About</h2>
     <img src="images/class1.jpg" alt="Classes photo 1" width="500">
     <p>
       Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.
@@ -30,16 +35,17 @@
     </p>
     <img src="images/lesson1.jpg" alt="Lessons photo 1" width="500">
   </article>
-
-  <footer>
-    <p>&copy; 2017 || Straight to the Point Archery</p>
+  <footer class="footerfirst">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes.html">Classes</a>
-      <a href="privatelessons.html">Lessons</a>
-      <a href="instructors.html">Instructors</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="privatelessons.html">Private Lessons</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+      </ul>
     </nav>
+    <p>Copyright &copy; 2017 || Straight to the Point Archery</p>
   </footer>
 </body>
 </html>
