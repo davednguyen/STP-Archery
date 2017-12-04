@@ -3,10 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Instructors</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">  
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zilla%20Slab">
   <style>
-    /* css from responsivegridsystem.com: */
+    header, footer {text-align: center;}
+
+    h1, 
+    h2, 
+    a,
+    p {
+      font-family: 'Zilla Slab', sans-serif; 
+    }
+
+    p, a {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    p.tight {
+      margin-bottom: 0;
+    }
+
+    header nav {
+      margin-top: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    img.right, 
+    iframe.right {
+      float: right;
+      width: 100%;
+    }
+
+    img.logo-right {
+      float: right;
+    }
+
+    article {
+      max-width: 90%;
+      margin: auto;
+    }
+
+    nav {
+      margin-bottom: 1rem;
+    }
+
+
+    /* GRID CSS from responsivegridsystem.com: */
 
     /*  SECTIONS  */
     .section {
@@ -49,42 +102,10 @@
     }
 
     /* End of css from responsivegridsystem.com */
-    
-    /* Custom content styling: */
-    
-    header, footer {text-align: center;}
-
-    h1, 
-    h2, 
-    a,
-    p {
-      font-family: 'Zilla Slab', sans-serif; 
-    }
-
-    p, a {
-      font-size: 1.2rem;
-    }
-
-    img.right {
-      float: right;
-      width: 100%;
-    }
-    
-    img.logo-right {
-      float: right;
-    }
-    
-    article {
-      max-width: 90%;
-      margin: auto;
-    }
-    
-    nav {
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
 <body>
+
   <header>
     <img src="images/logo.jpg" alt="Logo" width="67">
     <h1>Instructors for Straight to the Point Archery</h1>
@@ -160,7 +181,6 @@
   </article>
 
   <footer>
-    <p>&copy; 2017 || Straight to the Point Archery</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -168,7 +188,8 @@
       <a href="privatelessons.html">Lessons</a>
       <a href="instructors.html">Instructors</a>
     </nav>
+    <p>Copyright &copy; 2017 || Straight to the Point Archery</p>
   </footer>
-  </div>
+
 </body>
 </html>
