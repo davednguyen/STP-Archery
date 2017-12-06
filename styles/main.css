@@ -147,6 +147,11 @@ footer {
   padding: 7px 10px 0px 40px;
 } 
 
+/**add image background color**/
+img {
+  background-color:#dad4c8 ;
+}
+
 
 
 
