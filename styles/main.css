@@ -25,22 +25,30 @@ body
   background-color: 	#708090;
 }
 
+/**
 header 
 {
   background-image: url("images/logo.jpg");
-}
+}**/
 			
 p 
 { 
   color:#000000 
 }
-			
+
+header h1{
+  color: black;
+}
+
+/**
 h1 {
   text-indent: -9999px;
   width: 940px;
   height: 130px;
   margin: 0px;
-}
+}**/
+
+/**
 nav, footer 
 {
   clear: both;
@@ -70,6 +78,7 @@ nav li a:hover, nav li a.current
    color: #000000;
 }
 
+**/
 section.courses 
 {
    float: left;
@@ -181,5 +190,46 @@ img {
   border: 2px solid #aeaca8;
 }
 
+/*** Mike 's NAV style**/
+
+img.navlogo {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #aeaca8;
+  text-align: center;
+  padding-top: 0.7rem;
+}
+
+header.logo {
+  background-color: white;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+header nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+}
+
+nav a:hover 
+{
+   color: #000000;
+}
 
 
