@@ -3,91 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <title>Instructors</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+<!--  <link rel="stylesheet" type="text/css" href="styles/main.css">  -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zilla%20Slab">
   <style>
-    /* css from responsivegridsystem.com: */
+/* Sections layout */
 
-    /*  SECTIONS  */
-    .section {
-        clear: both;
-        padding: 0px;
-        margin: 0px;
-    }
+/* override the normal box model sizing rules */
+* {box-sizing: border-box;}
 
-    /*  COLUMN SETUP  */
-    .col {
-        display: block;
-        float:left;
-        margin: 1% 0 1% 1.6%;
-    }
-    .col:first-child { margin-left: 0; }
+header, section, footer, aside, nav, article, figure, figcaption 
+{
+    display: block;
+}
 
-    /*  GROUPING  */
-    .group:before,
-    .group:after { content:""; display:table; }
-    .group:after { clear:both;}
-    .group { zoom:1; /* For IE 6/7 */ }
-    /*  GRID OF TWO  */
-    .span_2_of_2 {
-        width: 100%;
-    }
-    .span_1_of_2 {
-        width: 49.2%;
-    }
+body {
+  background-color: #dad4c8;
+}
 
-    /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+img.navlogo {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-    @media only screen and (max-width: 480px) {
-        .col { 
-            margin: 1% 0 1% 0%;
-        }
-    }
+header {
+  background-color: #aeaca8;
+  text-align: center;
+  padding-top: 0.7rem;
+}
 
-    @media only screen and (max-width: 480px) {
-        .span_2_of_2, .span_1_of_2 { width: 100%; }
-    }
+header.logo {
+  background-color: white;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
 
-    /* End of css from responsivegridsystem.com */
-    
-    /* Custom content styling: */
-    
-    header, footer {text-align: center;}
+header nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+}
 
-    h1, 
-    h2, 
-    a,
-    p {
-      font-family: 'Zilla Slab', sans-serif; 
-    }
+article {
+  max-width: 90%;
+  margin: auto;
+  background-color: #dad4c8;
+}
 
-    p, a {
-      font-size: 1.2rem;
-    }
+footer {
+  text-align: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  background-color: #aeaca8;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+}
 
-    img.right {
-      float: right;
-      width: 100%;
+p.copyright {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+
+/* Font formatting */
+
+h1 {
+  font-family: 'Zilla Slab', sans-serif; 
+}
+
+h2 {
+  font-family: 'Zilla Slab', sans-serif; 
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+p.tight {
+  padding-bottom: 0.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+}
+
+nav a:hover 
+{
+   color: #000000;
+}
+
+
+/* Images layout */
+
+img.right {
+  float: right;
+  width: 100%;
+}
+
+iframe.right {
+  float: right;
+  width: 100%;
+}
+
+img.logo-right {
+  float: right;
+}
+
+
+/* ======== GRID CSS from responsivegridsystem.com: ======== */
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
     }
-    
-    img.logo-right {
-      float: right;
-    }
-    
-    article {
-      max-width: 90%;
-      margin: auto;
-    }
-    
-    nav {
-      margin-bottom: 1rem;
-    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/* ======== End of css from responsivegridsystem.com ======== */
   </style>
 </head>
 <body>
+
+  <header class="logo">
+    <a href="index.html">
+      <img src="images/logo.jpg" alt="Logo" width="60" class="navlogo">
+    </a>
+  </header>
+
   <header>
-    <img src="images/logo.jpg" alt="Logo" width="67">
-    <h1>Instructors for Straight to the Point Archery</h1>
+    <h1>Instructors</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -144,7 +234,6 @@
         
     <div class="section group">
       <div class="col span_1_of_2">
-        <img src="images/logo.jpg" alt="Logo" width="67" class="logo-right">
       </div>
       <div class="col span_1_of_2">
         <h2>About the Founder</h2>
@@ -160,7 +249,6 @@
   </article>
 
   <footer>
-    <p>&copy; 2017 || Straight to the Point Archery</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -169,6 +257,8 @@
       <a href="instructors.html">Instructors</a>
     </nav>
   </footer>
-  </div>
+
+  <p class="copyright">Copyright &copy; 2017 || Straight to the Point Archery</p>
+
 </body>
 </html>
