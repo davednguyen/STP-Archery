@@ -1,55 +1,147 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <title>Straight to the Point</title>
+  <link rel="stylesheet" type="text/css" href="styles/hl.css">
   <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">  
-  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zilla%20Slab">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">  
+  
+  
+  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
 </head>
+  
 <body>
-   <header class="logo">
-    <a href="index.html">
-      <img src="images/logo.jpg" alt="Logo" width="60" class="navlogo">
-    </a>
+  <header class="fixed-header section group">
+    <div class="col span_4_of_4">
+      <h1>Straight to the Point Archery</h1>
+    </div>
+    <div class="col span_1_of_4"></div>
+    <div class="col span_2_of_4">
+      <!-- <section class="title-logo">
+        <h1 class="straight">Straight</h1>
+        <h1 class="to-the">to the</h1>
+        <h1 class="point">Point</h1>
+        <h1 class="archery">Archery</h1>
+        -->
+      <!-- </section> -->
+    
+      <!-- Overall idea: I wrapped nav and logo together by adding class "fixed-nav" -->
+    
+      
+      <!-- Idea 2: Nav with About in Main Nav -->
+      <article class="nav-wrap">
+        <a href="index.html" class="logo-pic"><img src="images/logo1.jpg" alt="logo"></a>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="privatelessons.html">Private Lessons</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+          </ul>
+        </nav>
+      </article>
+        <!-- Added a search bar to the fixed-nav -->
+      
+        <section class="search">
+          <input type="text" class="search-input" placeholder="Need help?">
+          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        </section>
+    </div>
+    <div class="col span_1_of_4"></div>
   </header>
-  <header>
-    <h1>Straight to the Point Archery</h1>
-    <nav class="main-nav">
-      <ul>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="classes.html">Classes</a>
-        <a href="privatelessons.html">Private Lessons</a>
-        <a href="instructors.html">Instructors</a>
-      </ul>
-    </nav>
-  </header>
-  <article class="fixed-nav">
-    <h2>About</h2>
-    <img src="images/class1.jpg" alt="Classes photo 1" width="500">
-    <p>
-      Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.
-      Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.
-    </p>
-    <p>
-      <a href="about.html">More information</a>
-    </p>
-    <img src="images/lesson1.jpg" alt="Lessons photo 1" width="500">
+    
+  <article class="content-wrapper">
+    <div class="section group">
+      <div class="col span_2_of_4">
+        <img src="images/class1.jpg" alt="Classes photo 1" width="500" class="right">
+      </div>
+      
+      <div class="col span_2_of_4">
+        <h2>Straight to the Point</h2>
+
+        <p>
+          Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.
+          Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.
+        </p>
+
+        <p>
+          <a href="about.html">More information</a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="section group">
+      <div class="col span_2_of_4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rzj4FFi7wt8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="right"></iframe>
+      </div>
+      
+      <div class="col span_2_of_4">
+        <h2>Archery video example</h2>
+
+        <p>Men's Archery Individual Gold Medal Match | Rio 2016</p>
+      </div>
+    </div>
   </article>
-  <footer class="footerfirst">
-    <nav>
-      <ul>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="classes.html">Classes</a>
-        <a href="privatelessons.html">Private Lessons</a>
-        <a href="instructors.html">Instructors</a>
-      </ul>
-    </nav>
-    <p>Copyright &copy; 2017 || Straight to the Point Archery</p>
+
+  <!-- Global Footer. Has Contact section, social media, nav -->
+  <footer>
+    <div class="section group">
+      <div class="col span_3_of_12"></div>
+      <!-- One "contact" section without e-mail form link -->
+      <div class="f-border col span_2_of_12">
+        <section class="contact">
+          <h6>Contact Us</h6>
+          
+          <p class="contact-title">Address:</p>
+          <p>528 Nock Point Ln Tacoma, WA 98412</p>
+          
+          <p class="contact-title">Phone:</p>
+          <p>(253)555-1010</p>
+          
+          <p class="contact-title">Email:</p>
+          <p>archery-education@example.com</p>
+        </section>
+      </div>
+      
+      <div class="f-border col span_2_of_12">
+        <!-- section with social media icons/links -->
+        <section class="social-media">
+          <h6>Connect With Us</h6>
+
+          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+        </section>
+      </div>
+      
+      <div class="col span_2_of_12">
+        <!-- footer nav -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Private Lessons</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col span_3_of_12"></div>
+    </div>
+    <div class="section group">
+      <div class="copy col span_12_of_12">
+        <p>Copyright&copy; 2017 Straight to the Point Archery</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
+
