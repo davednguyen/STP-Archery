@@ -3,12 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <title>Instructors</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+<!--  <link rel="stylesheet" type="text/css" href="styles/main.css">  -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zilla%20Slab">
+  <style>
+/* Sections layout */
+
+/* override the normal box model sizing rules */
+* {box-sizing: border-box;}
+
+header, section, footer, aside, nav, article, figure, figcaption 
+{
+    display: block;
+}
+
+body {
+  background-color: #dad4c8;
+}
+
+img.navlogo {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #aeaca8;
+  text-align: center;
+  padding-top: 0.7rem;
+}
+
+header.logo {
+  background-color: white;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+header nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+article {
+  max-width: 90%;
+  margin: auto;
+  background-color: #dad4c8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  background-color: #aeaca8;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+}
+
+p.copyright {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+
+/* Font formatting */
+
+h1 {
+  font-family: 'Zilla Slab', sans-serif; 
+}
+
+h2 {
+  font-family: 'Zilla Slab', sans-serif; 
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+p.tight {
+  padding-bottom: 0.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+}
+
+nav a:hover 
+{
+   color: #000000;
+}
+
+
+/* Images layout */
+
+img.right {
+  float: right;
+  width: 100%;
+}
+
+iframe.right {
+  float: right;
+  width: 100%;
+}
+
+img.logo-right {
+  float: right;
+}
+
+
+/* ======== GRID CSS from responsivegridsystem.com: ======== */
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/* ======== End of css from responsivegridsystem.com ======== */
+  </style>
 </head>
 <body>
+
+  <header class="logo">
+    <a href="index.html">
+      <img src="images/logo.jpg" alt="Logo" width="60" class="navlogo">
+    </a>
+  </header>
+
   <header>
-    <img src="images/logo.jpg" alt="Logo" width="100">
-    <h1>Instructors for Straight to the Point Archery</h1>
+    <h1>Instructors</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -19,43 +188,67 @@
   </header>
 
   <article>
-    <h2>Derek Jenkins</h2>
-    <img src="images/derek-jenkins-instructor.jpg" alt="Derek Jenkins" width="500">
-    <p>
-      Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping.
-      His skillful mastery of bushcraft and wilderness survival knowledge helps define his character.
-      He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.
-    </p>
 
-    <h2>Amy Smith</h2>
-    <img src="images/amy-smith-instructor.jpg" alt="Amy Smith" width="500">
-    <p>
-      Amy truly has a passion for archery.
-      She comes from a long line of hunters, fisherman, and trappers of Canada.
-      Amy  places a strong emphasis on safety and is enthusiastic about teaching.
-      Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.
-    </p>
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <img src="images/derek-jenkins-instructor.jpg" alt="Derek Jenkins" class="right">
+      </div>
+      <div class="col span_1_of_2">
+        <h2>Derek Jenkins</h2>
+        <p>
+          Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping.
+          His skillful mastery of bushcraft and wilderness survival knowledge helps define his character.
+          He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.
+        </p>
+      </div>
+    </div>
+        
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <img src="images/amy-smith-instructor.jpg" alt="Amy Smith" class="right">
+      </div>
+      <div class="col span_1_of_2">
+        <h2>Amy Smith</h2>
+        <p>
+          Amy truly has a passion for archery.
+          She comes from a long line of hunters, fisherman, and trappers of Canada.
+          Amy  places a strong emphasis on safety and is enthusiastic about teaching.
+          Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.
+        </p>
+      </div>
+    </div>
 
-    <h2>Nathan Lee</h2>
-    <img src="images/nathan-lee-instructor.jpg" alt="Nathan Lee" width="500">
-    <p>
-      Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009.
-      He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp.
-      Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.
-    </p>
-    
-    <h2>About the Founder</h2>
-    <p>
-      Giap Nguyen started Straight to the Point Archery in 2005.
-      He's an avid and accomplished archer himself, having competed with the United States Archery Team in the 2000 Summer Olympics.
-      He has three children, and  started Straight to the Point in part because he was not satisfied with the archery eduction options for them in Tacoma.
-      After The Hunger Games books and movies came out, he noticed a surge in popularity of archery among young people, especially young women, and the business has been booming ever since.
-    </p>
-    
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <img src="images/nathan-lee-instructor.jpg" alt="Nathan Lee" class="right">
+      </div>
+      <div class="col span_1_of_2">
+        <h2>Nathan Lee</h2>
+        <p>
+          Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009.
+          He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp.
+          Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.
+        </p>
+      </div>
+    </div>
+        
+    <div class="section group">
+      <div class="col span_1_of_2">
+      </div>
+      <div class="col span_1_of_2">
+        <h2>About the Founder</h2>
+        <p>
+          Giap Nguyen started Straight to the Point Archery in 2005.
+          He's an avid and accomplished archer himself, having competed with the United States Archery Team in the 2000 Summer Olympics.
+          He has three children, and  started Straight to the Point in part because he was not satisfied with the archery eduction options for them in Tacoma.
+          After The Hunger Games books and movies came out, he noticed a surge in popularity of archery among young people, especially young women, and the business has been booming ever since.
+        </p>
+      </div>
+    </div>
+        
   </article>
 
   <footer>
-    <p>&copy; 2017 || Straight to the Point Archery</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -64,5 +257,8 @@
       <a href="instructors.html">Instructors</a>
     </nav>
   </footer>
+
+  <p class="copyright">Copyright &copy; 2017 || Straight to the Point Archery</p>
+
 </body>
 </html>
