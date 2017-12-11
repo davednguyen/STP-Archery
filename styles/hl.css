@@ -23,58 +23,7 @@ h1 {
   margin: 0;
   background-color: #b6b4b0;
 }
-/* This is for the Website Title on the Header. Positioning to condense h1's 
-.title-logo {
-  width: 244px;
-  margin: auto;
-  float: left;
-  padding: 5px 5px 5px 5px;
-}
-    
-h1 {
-  height: 100%;
-  margin: auto;
-}
-    
-.straight {
-  float: left;
-  font-weight: bold;
-  font-size: 2em;
-  border-top: 4px solid black;
-  border-left: 4px solid black;
-}
-    
-.to-the {
-  clear: both;
-  float: left;
-  font-size: 1.25em;
-  position: relative;
-  border-left: 4px solid black;
-  padding-left: 4px;
-}
-    
-.point {
-  float:left;
-  width: 57px;
-  font-size: 1.55em;
-  position: relative;
-  top: -4px;
-  left: px;
-}
-    
-.archery {
-  clear: left;
-  float: left;
-  position: relative;
-  top: -12px;
-  font-weight: bold;
-  font-size: 2em;
-  margin: auto;
-  border-bottom: 4px solid black;
-  border-left: 4px solid black;
-}
-*/
-/* end of website title for header */
+
 .logo-pic img {
   float: left;
   width: 80px;
@@ -171,14 +120,14 @@ footer {
 }
 
 h6 {
-  font-weight: 1000;;
+  font-weight: 800;
   margin: 0;
   padding: 10px 0px;
   font-size: 1.5em
 }
 
 .contact-title {
-  font-weight: 1000;
+  font-weight: 800;
   font-size: 1em;
 }
 
