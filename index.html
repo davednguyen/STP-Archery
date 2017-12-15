@@ -1,62 +1,46 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <title>Straight to the Point</title>
   <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/hl.css">
   <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zilla%20Slab">
-   <link rel="stylesheet" type="text/css" href="styles/main.css">
-
-  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/hl.css">
 </head>
   
 <body>
-  <header class="fixed-header section group">
+
+  <header class="fixed-header">
     <div class="col span_4_of_4">
       <h1>Straight to the Point Archery</h1>
-    </div>
-    <div class="col span_1_of_4"></div>
-    <div class="col span_2_of_4">
-      <!-- <section class="title-logo">
-        <h1 class="straight">Straight</h1>
-        <h1 class="to-the">to the</h1>
-        <h1 class="point">Point</h1>
-        <h1 class="archery">Archery</h1>
-        -->
-      <!-- </section> -->
-    
-      <!-- Overall idea: I wrapped nav and logo together by adding class "fixed-nav" -->
-    
-      
-      <!-- Idea 2: Nav with About in Main Nav -->
       <article class="nav-wrap">
-        <a href="index.html" class="logo-pic"><img src="images/logo.jpg" alt="logo"></a>
+
+        <a href="index.html" class="logo-pic">
+          <img src="images/logo.jpg" alt="logo">
+        </a>
         
         <nav class="main-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="classes.html">Classes</a></li>
-            <li><a href="privatelessons.html">Private Lessons</a></li>
+            <li><a href="privatelessons.html">Lessons</a></li>
             <li><a href="instructors.html">Instructors</a></li>
           </ul>
+          <section class="search">
+            <input type="text" class="search-input" placeholder="Search">
+            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+          </section>
         </nav>
+
       </article>
-        <!-- Added a search bar to the fixed-nav -->
-      
-        <section class="search">
-          <input type="text" class="search-input" placeholder="Need help?">
-          <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-        </section>
     </div>
-    <div class="col span_1_of_4"></div>
   </header>
-    
+  
+  
   <article class="content-wrapper">
     <div class="section group">
       <div class="col span_2_of_4">
@@ -106,7 +90,7 @@
           <p>(253)555-1010</p>
           
           <p class="contact-title">Email:</p>
-          <p>archery-education@example.com</p>
+          <p><a href="mailto:archery-education@example.com">archery-education@example.com</a></p>
         </section>
       </div>
       
@@ -130,7 +114,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Classes</a></li>
             <li><a href="#">Instructors</a></li>
-            <li><a href="#">Private Lessons</a></li>
+            <li><a href="#">Lessons</a></li>
           </ul>
         </nav>
       </div>
@@ -142,6 +126,6 @@
       </div>
     </div>
   </footer>
+  <script src="https://use.fontawesome.com/5d40cd434e.js"></script>
 </body>
 </html>
-
